@@ -210,14 +210,6 @@ const otkuda = document.querySelector('.input__cities-from'),
         //перебираем массив сити в поиске значения из инпут (то, что ввел пользователь) - возвращаем 1 значение!
        //формируем объект в котором свойствами записываем введенные польхователем значения, взяв только то что нужно (код города...)
         
-       Body.addEventListener('click', (event)=>{
-        const target = event.toElement;
-       if (target.tagName.toUpperCase()!=='LI')
-       {
-        dropdowncitiesfrom.textContent='';
-        dropdowncitiesto.textContent='';
-       }
-       })
 
        const formData ={
             from: city.find((item)=>otkuda.value===item.name),
